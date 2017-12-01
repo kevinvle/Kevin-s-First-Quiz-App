@@ -14,6 +14,8 @@
 		1D7595CE1FD0808B00B5B432 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7595CC1FD0808B00B5B432 /* LaunchScreen.storyboard */; };
 		1D7595D91FD0808C00B5B432 /* Kevin_s_First_Quiz_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7595D81FD0808C00B5B432 /* Kevin_s_First_Quiz_GameTests.swift */; };
 		1D7595E41FD0808C00B5B432 /* Kevin_s_First_Quiz_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7595E31FD0808C00B5B432 /* Kevin_s_First_Quiz_GameUITests.swift */; };
+		1DD4E7681FD08ACC00C79ED1 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD4E7671FD08ACC00C79ED1 /* RoundedButton.swift */; };
+		1DD4E76A1FD08B1C00C79ED1 /* RoundedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD4E7691FD08B1C00C79ED1 /* RoundedLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		1D7595DF1FD0808C00B5B432 /* Kevin's First Quiz GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kevin's First Quiz GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D7595E31FD0808C00B5B432 /* Kevin_s_First_Quiz_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kevin_s_First_Quiz_GameUITests.swift; sourceTree = "<group>"; };
 		1D7595E51FD0808C00B5B432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DD4E7671FD08ACC00C79ED1 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		1DD4E7691FD08B1C00C79ED1 /* RoundedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,8 @@
 		1DD4E7631FD086D900C79ED1 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				1DD4E7671FD08ACC00C79ED1 /* RoundedButton.swift */,
+				1DD4E7691FD08B1C00C79ED1 /* RoundedLabel.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -308,6 +314,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D7595C61FD0808B00B5B432 /* MenuViewController.swift in Sources */,
+				1DD4E7681FD08ACC00C79ED1 /* RoundedButton.swift in Sources */,
+				1DD4E76A1FD08B1C00C79ED1 /* RoundedLabel.swift in Sources */,
 				1D7595C41FD0808B00B5B432 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
