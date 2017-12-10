@@ -95,7 +95,10 @@ class MenuViewController: UIViewController {
             contentView.bottomAnchor.constraint(equalTo: view.bottomAnchor),   // bottom
             // What this does is make sure that our content view is using the entire view 
             logoView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20.0),
-            logoView.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 0.6)
+            logoView.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 0.6),
+            logoView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            logoView.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.2),
+             
 
         ]
     }
