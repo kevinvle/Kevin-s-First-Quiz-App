@@ -98,9 +98,46 @@ class MenuViewController: UIViewController {
             logoView.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 0.6),
             logoView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
             logoView.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.2),
-             
+            buttonView.topAnchor.constraint(equalTo: logoView.bottomAnchor, constant: 20.0), // position it right at the bottom of logoView
+            buttonView.bottomAnchor.constraint(equalTo: scoreView.topAnchor, constant: -20.0), // this time it's the other way around so negative constant
+            buttonView.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 0.6),
+            buttonView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            gameButtons[0].topAnchor.constraint(equalTo: buttonView.topAnchor, constant: 8.0),
+            gameButtons[0].bottomAnchor.constraint(equalTo: gameButtons[1].topAnchor, constant: -8.0),
+            gameButtons[0].leadingAnchor.constraint(equalTo: buttonView.leadingAnchor),
+            gameButtons[0].trailingAnchor.constraint(equalTo: buttonView.trailingAnchor),
+            gameButtons[1].bottomAnchor.constraint(equalTo: gameButtons[2].topAnchor, constant: -8.0),
+            gameButtons[1].leadingAnchor.constraint(equalTo: buttonView.leadingAnchor),
+            gameButtons[1].trailingAnchor.constraint(equalTo: buttonView.trailingAnchor),
+            gameButtons[2].bottomAnchor.constraint(equalTo: gameButtons[3].topAnchor, constant: -8.0),
+            gameButtons[2].leadingAnchor.constraint(equalTo: buttonView.leadingAnchor),
+            gameButtons[2].trailingAnchor.constraint(equalTo: buttonView.trailingAnchor),
+            gameButtons[3].bottomAnchor.constraint(equalTo: buttonView.bottomAnchor, constant: -8.0),
+            gameButtons[3].leadingAnchor.constraint(equalTo: buttonView.leadingAnchor),
+            gameButtons[3].trailingAnchor.constraint(equalTo: buttonView.trailingAnchor),
+            gameButtons[0].heightAnchor.constraint(equalTo: gameButtons[1].heightAnchor), // These 3 lines make sure all our buttons are positioned correctly and are equal in size
+            gameButtons[1].heightAnchor.constraint(equalTo: gameButtons[2].heightAnchor),
+            gameButtons[0].heightAnchor.constraint(equalTo: gameButtons[1].heightAnchor),
+            scoreView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -40.0),
+            scoreView.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 0.6),
+            scoreView.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.3),
+            scoreView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            titleLabel.topAnchor.constraint(equalTo: scoreView.topAnchor, constant: 8.0),
+            titleLabel.leadingAnchor.constraint(equalTo: scoreView.leadingAnchor),
+            titleLabel.trailingAnchor.constraint(equalTo: scoreView.trailingAnchor),
+            titleLabel.bottomAnchor.constraint(equalTo: recentScoreLabel.topAnchor, constant: -8.0),
+            recentScoreLabel.leadingAnchor.constraint(equalTo: scoreView.leadingAnchor),
+            recentScoreLabel.trailingAnchor.constraint(equalTo: scoreView.trailingAnchor),
+            recentScoreLabel.bottomAnchor.constraint(equalTo: highscoreLabel.topAnchor, constant: -8.0),
+            highscoreLabel.leadingAnchor.constraint(equalTo: scoreView.leadingAnchor),
+            highscoreLabel.trailingAnchor.constraint(equalTo: scoreView.trailingAnchor),
+            highscoreLabel.bottomAnchor.constraint(equal: scoreView.bottomAnchor, constant: -8.0),
+            titleLabel.heightAnchor.constraint(equalTo: recentScoreLabel.heightAnchor),
+            recentScoreLabel.heightAnchor.constraint(equalTo: highscoreLabel.heightAnchor)
 
         ]
+
+        NSLayoutConstraint.activate(constraints)
     }
 
 
