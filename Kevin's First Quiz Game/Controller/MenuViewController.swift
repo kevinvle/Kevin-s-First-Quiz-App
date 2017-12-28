@@ -10,7 +10,6 @@
 import UIKit
 
 class MenuViewController: UIViewController {
-
     private let contentView = UIView()  // contains all our different elements. private only lets that property content access to me.
     private let logoView = UIImageView() // Take an Image View and position it on the top of our screen
     private let buttonView = UIView()  // Contains 4 buttons for our 4 different types of quiz games
@@ -19,7 +18,6 @@ class MenuViewController: UIViewController {
     private let titleLabel = UILabel()
     private let recentScoreLabel = UILabel()  // Instance of UILabel
     private let highscoreLabel = UILabel()    // Instance of UILabel
-    
     private let titles = [
         "Multiple Choice",
         "Image Quiz",
@@ -43,10 +41,8 @@ class MenuViewController: UIViewController {
     func layoutView() { 
         contentView.translatesAutoresizingMaskIntoConstraints = false  // That is the first step we need for our anchor points when we do autolayoutencode
         view.addSubview(contentView)
-
         logoView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(logoView)
-
         buttonView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(buttonView)
 
@@ -58,23 +54,17 @@ class MenuViewController: UIViewController {
             button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)  // Set font of buttons
             button.setTitle(title, for: .normal)  // Set current title
             button.tag = index  // something we'll need later on
-            gameButtons.append(button)  
-
+            gameButtons.append(button)
             // All we need to add out button view.
-
-
         }
-        
         scoreView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(scoreView)
-
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         recentScoreLabel.translatesAutoresizingMaskIntoConstraints = false // SHows recent score
         highscoreLabel.translatesAutoresizingMaskIntoConstraints = false
         scoreView.addSubview(titleLabel)
         scoreView.addSubview(recentScoreLabel)
         scoreView.addSubview(highscoreLabel)
-
         titleLabel.textAlignment = .center
         titleLabel.font = UIFont.boldSystemFont(ofSize: 30)
         titleLabel.textColor = UIColor.white
@@ -82,8 +72,6 @@ class MenuViewController: UIViewController {
         recentScoreLabel.textColor = UIColor.white
         highscoreLabel.font = UIFont.boldSystemFont(ofSize: 20)
         highscoreLabel.textColor = UIColor.white
-
-
         titleLabel.text = "Multiple Choice"
         recentScoreLabel.text = "Recent: 0"
         highscoreLabel.text = "Highscore: 0"
@@ -134,13 +122,8 @@ class MenuViewController: UIViewController {
             highscoreLabel.bottomAnchor.constraint(equalTo: scoreView.bottomAnchor, constant: -8.0),
             titleLabel.heightAnchor.constraint(equalTo: recentScoreLabel.heightAnchor),
             recentScoreLabel.heightAnchor.constraint(equalTo: highscoreLabel.heightAnchor)
-
         ]
-
         NSLayoutConstraint.activate(constraints)
     }
-
-
-
 }
 
